@@ -179,3 +179,21 @@ console.log('Расстояние между точками a(-2,7) b(3,-2)');
 console.log(Math.sqrt((3 - -2) ** 2 + (-2 - 7) ** 2));
 console.log('Объём шара радиусом 6371');
 console.log(Math.round((4 / 3) * Math.PI * Math.pow(6371, 3)));
+
+// 7.5. Строки
+console.log(`многострочные тексты в переменные`);
+const greeting = `Привет,
+Антон`;
+console.log(greeting);
+// -> Привет,
+// -> Антон
+
+console.log(`Запись в обратных кавычках позволяет делать вставки переменных`);
+const name = 'Антон';
+const greetingNew = `Привет, ${name}!`;
+console.log(greeting);
+// -> Привет, Антон!
+
+// Запись в обратных кавычках называют шаблонными строками
+
+console.log(`\u{1F609}`);
