@@ -197,3 +197,76 @@ console.log(greeting);
 // Запись в обратных кавычках называют шаблонными строками
 
 console.log(`\u{1F609}`);
+
+console.log(`${'Полицейский'} за рулём, я чиню парашют, ${"медсестра"} успокаивает нас пением.`);
+
+// Длина строки
+console.log('Длина строки \n У любой строки есть свойство "length", в которой хранится длина строки.');
+console.log('У любой строки есть свойство length'.length);
+// -> 35
+
+// Конкатенация
+console.log('Конкатенация \n С помощью символа + \n С использованием шаблонных строк.');
+
+const firstName = "Александр";
+const patronomic = "Сергеевич";
+const surname = "Пушкин";
+const year = "1799";
+console.log(firstName + " " + patronomic + " " + surname + " родился в " + year + " году.");
+console.log(`${firstName} ${patronomic} ${surname} родился в ${year} году.`);
+// -> Александр Сергеевич Пушкин родился в 1799 году.
+// -> Александр Сергеевич Пушкин родился в 1799 году.
+
+// Преобразование символов в код
+console.log('Преобразование символов в код \n Для получения кода символа используется метод "charCodeAt():"');
+console.log('Антон'.charCodeAt(0));
+// -> 1040
+console.log('Для получения символа по коду можно использовать метод "fromCharCode()" объекта String:');
+console.log(String.fromCharCode(1040));
+// -> А
+
+// Изменение регистра
+console.log('Для изменения регистра в JavaScript существует два метода: \n "toUpperCase()" — для преобразования в верхний регистр. \n "toLowerCase()" — для преобразования в нижний регистр.');
+const changeCaseExample = "ПлЯшУщИе БуКвЫ";
+console.log(changeCaseExample.toUpperCase());
+console.log(changeCaseExample.toLowerCase());
+console.log(changeCaseExample);
+// -> ПЛЯШУЩИЕ БУКВЫ
+// -> пляшущие буквы
+// -> ПлЯшУщИе БуКвЫ
+
+let fantasyGen = "Жил-был объект А. "
+fantasyGen += "И был у него объект Б.\n"
+fantasyGen += "Однажды думает объект А: "
+fantasyGen += "\"А не пойти ли мне объект В? "
+fantasyGen += "Продам объект Б и куплю себе объект Г.\"\n"
+fantasyGen += "И пошёл объект А объект В.\n"
+fantasyGen += "И продал объект Б, и купил объект Г.\n"
+fantasyGen += "И вернулся объект А домой.\n"
+fantasyGen += "Конец."
+
+let firstFantasy = fantasyGen;
+firstFantasy = firstFantasy.replace(/объект А/g, 'старик');
+firstFantasy = firstFantasy.replace(/объект Б/g, 'кисет');
+firstFantasy = firstFantasy.replace(/объект В/g, 'на рынок');
+firstFantasy = firstFantasy.replace(/объект Г/g, 'мотоцикл');
+
+let secondFantasy = fantasyGen;
+secondFantasy = secondFantasy.replace(/объект А/g, 'Антон');
+secondFantasy = secondFantasy.replace(/объект Б/g, 'волшебный шкаф');
+secondFantasy = secondFantasy.replace(/объект В/g, 'к царю');
+secondFantasy = secondFantasy.replace(/объект Г/g, 'неволшебный шкаф');
+
+console.log(firstFantasy);
+console.log(secondFantasy);
+
+// Задание 7ю6ю1
+console.log('Задание 7.6.1');
+const text = "И ушёл колобок от бабушки";
+
+console.log('\u043C' + 'панама'.slice(-3));
+
+
+
+
+
